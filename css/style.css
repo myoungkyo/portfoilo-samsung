@@ -1,0 +1,441 @@
+@charset "UTF-8";
+html,body{ height: 100%; }
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  color:#666666;
+  min-width: 1018px;
+}
+ul,ol{ list-style: none; }
+a{ color: #666666; }
+h1,h2,h3,h4,h5,h6{ line-height: 1; }
+
+#wrap{
+  width: 1320px;
+  margin: 0 auto;
+  background: #f1f1f1;
+}
+
+/*상단 고정형 메뉴*/
+#header{
+  position: fixed;
+  width: 1320px;
+  min-width: 768px;
+  margin: 0 auto;
+  top: 0;
+  overflow: hidden;
+  padding: 45px 20px 0;
+}
+#header .inner{ float: right; }
+#header .inner #gnb{ float:left; }
+#logo{ float: left; }
+#gnb{
+  overflow: hidden;
+  font-size: 18px;
+}
+#gnb li{
+  float: left;
+  height: 20px;
+  margin-left: 25px;
+}
+
+#gnb li:first-child{
+  margin-left: 0;
+}
+
+#gnb li a{
+  line-height: 20px;
+  color: white;
+}
+
+/*메인 배너 영역*/
+#mainbanner{
+  background: url('../img/main_banner_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+#mainbanner .inner{
+  position: relative;
+  width: 1320px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+#mainbanner .maintext{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  min-height: 254px;
+  top: calc(50% - 273px);
+}
+
+/*메인배너 메인타이틀*/
+#mainbanner .maintext p{
+  font-size: 50px;
+  color: #fff;
+  margin-top: 100px;
+}
+
+#mainbanner .maintext p.maintitle{
+  line-height: 60px;
+}
+
+/*메인배너 서브타이틀*/
+#mainbanner .maintext p.subtitle{
+  margin-top: 30px;
+  font-size: 20px;
+  color: #fff;
+}
+
+a.common_btn{
+  display: inline-block;
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 5px;
+  background: #0055b8;
+  color: white;
+  font-size: 20px;
+  margin-top: 38px;
+}
+
+#container section .inner{
+  width: 1320px;
+  min-height: 650px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+#container section .inner h2{
+  font-size: 45px;
+  line-height: 60px;
+  color: #333333;
+}
+
+#container section .inner h3{
+  font-size: 35px;
+  line-height: 60px;
+  color: #333333;
+}
+
+#container section .inner .subtitle{
+  margin-top: 27px;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+#container section:nth-of-type(1) .inner{
+  padding-top: 190px;
+  min-height: 485px;
+}
+
+#container section:nth-of-type(1) .inner li{
+  display: inline-block;
+}
+
+#container section:nth-of-type(1) .inner .items{
+  overflow: hidden;
+}
+
+#container section:nth-of-type(1) .inner .items .left{
+  float: left;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+#container section:nth-of-type(1) .inner .items .left a{
+  color: black;
+}
+
+#container section:nth-of-type(1) .inner .items .right{
+  float: right;
+  color: black;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+#container section:nth-of-type(2) .inner{
+  padding-top: 100px;
+  min-height: 510px;
+  color: black;
+  letter-spacing: -1px;
+}
+
+#container section:nth-of-type(2) .inner ul{
+  margin-top: 60px;
+  display: flex;
+}
+
+#container section:nth-of-type(2) .inner ul li{
+  flex: 20%;
+}
+
+#container section:nth-of-type(2) .inner ul li .top{
+  font-size: 18px;
+}
+
+#container section:nth-of-type(2) .inner ul li .center{
+  font-size: 60px;
+  color: #1428a0;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+#container section:nth-of-type(2) .inner ul li .bottom{
+  color: #666;
+}
+
+#container section:nth-of-type(2) .inner p{
+  text-align: left;
+  margin-top: 30px;
+  color: #666;
+}
+
+#container section:nth-child(even){
+  background: #f9f9f9;
+}
+
+#container section .inner .box_wrap{
+  overflow: hidden;
+}
+
+#container section .inner .box_wrap li{
+  float: left;
+  width: calc(25% - 40px);
+  padding: 0 20px;
+  text-align: center;
+}
+
+#container section .inner .box_wrap li .items{
+  border: 1px solid #e3e3e3;
+  min-height: 180px;
+  padding: 50px 30px;
+}
+
+#container section .inner .box_wrap li .items p{
+  margin-top: 50px;
+  line-height: 26px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 17px;
+  word-break: keep-all;
+}
+
+#container section .inner .thumb_img_wrap{
+  text-align: center;/**자식요소 ul을 가운데 정렬하겠다.**/
+}
+
+#container section .inner .thumb_img_wrap ul{
+  overflow: hidden;
+  display: inline-block;/**자식요소 li의 컨텐츠 크기만큼 너비가 지정된다.**/
+}
+
+#container section .inner .thumb_img_wrap ul:nth-child(1){
+  margin-top: 75px;
+}
+#container section .inner .thumb_img_wrap ul:nth-child(2){
+  margin-top: 80px;
+}
+
+#container section .inner .thumb_img_wrap ul li{
+  display: inline-block;
+  float: left;
+  width: 16.666%;
+}
+
+#container section .inner .thumb_img_wrap ul li img{
+  width: 100%;
+}
+
+/*section 3번 style*/
+#container section .inner .box{
+  float: left;
+  width: 50%;
+  min-height: 650px;
+  text-align: center;
+}
+
+#container section:nth-child(3) .inner .box.img img{
+  width: 40%;
+  margin-top: 30%;
+}
+
+#container section:nth-child(4){
+  background-position: calc(50% + 660px) center;
+}
+
+#container section:nth-child(4) .inner .box img{
+  width: 50%;
+  margin-top: 30%;
+}
+
+#container section:nth-child(5) .inner .box.img img{
+  width: 45%;
+  margin-top: 30%;
+}
+
+#container section .inner .box .text_box{
+  display: inline-block;
+  text-align: left;
+  margin-top: 160px;
+  box-sizing: border-box;
+  padding: 0 3%;
+}
+
+#container section:nth-child(3) .inner .box .text_box,#container section:nth-child(5) .inner .box .text_box{
+  margin-left: -50px;
+  margin-right: 50px;
+}
+
+#container section:nth-child(4) .inner .box .text_box{
+  margin-left: 100px;
+  margin-right: -50px;
+}
+
+#container section .inner .box .text_box a{ text-align: center }
+
+/*하단 영역*/
+#footer{
+  background: #eeeeee;
+  border-top: 1px solid #ccc;
+}
+
+#footer .inner{
+  position: relative;
+  width: 1280px;
+  height: 200px;
+  padding: 50px 20px 0;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+#footer .inner .up{
+  overflow: hidden;
+  margin: 0 120px;
+}
+
+#footer .inner .up .img{
+  float: left;
+}
+
+#footer .inner .up .text{
+  float: right;
+  margin-top: 15px;
+}
+
+#footer .inner .up .text span{
+  margin-left: 30px;
+}
+
+#footer .inner .up .text span:first-child a{
+  font-weight: bold;
+  color: black;
+}
+
+#footer .inner .down{
+  margin: 40px auto 0;
+  display: table;
+}
+
+#footer .inner .down .p{
+}
+
+#footer .inner .down .span{
+  font-size: 15px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+select::-ms-expand{
+  display: none;
+}
+
+#familysite:focus{
+  border: 1px solid #999999;
+}
+
+/*media query 작업 영역*/
+@media screen and ( max-width: 1320px ) {
+  #wrap,#header,#mainbanner .inner,#container section .inner{
+    width: 100%;
+  }
+  #footer .inner { width: calc( 100% - 30px ); }
+  #container section .inner,#container section .inner .box{
+    min-height: 550px;
+  }
+  #container section .inner .box .text_box{
+    margin-top: 110px;
+  }
+  #container section .inner {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  #container section .inner .subtitle{
+    font-size: 18px;
+    line-height: 28px;
+  }
+  #container section:nth-of-type(2) .inner ul li{
+    font-size: 18px;
+  }
+  #container section:nth-of-type(2) .inner p{
+    font-size: 14px;
+  }
+  #container section:nth-child(3) .inner .box.img,#container section:nth-child(5) .inner .box.img{
+    background-size: 100% auto;
+  }
+  #container section:nth-child(5) .inner .box.img{
+    background-position: bottom;
+  }
+}
+
+@media screen and ( max-width: 1300px ) {
+  #footer .img{
+    width: 100%;
+    text-align: center;
+  }
+  #footer .text{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and ( max-width: 1124px ) {
+  #container section .inner h3{
+    font-size: 30px;
+  }
+}
+
+@media screen and ( max-width: 1068px ) {
+  #mainbanner .maintitle{
+    word-break: keep-all;
+  }
+}
+
+@media screen and ( max-width: 1024px ) {
+ #mainbanner .maintitle{
+   word-break: keep-all;
+ }
+ #container section .inner h2{
+   font-size: 37px;
+ }
+ #container section:nth-of-type(1) .inner{
+   padding: 65px 0;
+ }
+ #container section .inner .box_wrap li{
+   width: calc( 50% - 40px );
+   padding: 20px;
+ }
+ #container section:nth-of-type(2) .inner ul{
+
+ }
+ #container section:nth-of-type(2) .inner ul li{
+   flex: 33.333333%;
+   font-size: 18px;
+ }
+ #container section:nth-of-type(2) .inner p{
+   font-size: 14px;
+ }
+}
