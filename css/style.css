@@ -35,7 +35,7 @@ h1,h2,h3,h4,h5,h6{ line-height: 1; }
 #gnb li{
   float: left;
   height: 20px;
-  margin-left: 25px;
+  margin-right: 25px;
 }
 
 #gnb li:first-child{
